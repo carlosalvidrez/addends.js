@@ -8,16 +8,16 @@ For example, all possible number combinations that add-up to '7', from original 
 
 Function's input parameters:
 
-(1) target
+	(1) target
 	The number (integer or float0 being sought (integer or float, cientific notation accepted).
 
-(2) arr
+	(2) arr
 	A numeric array of numbers from which to draw potential addend combinations. Text, boolean values and objects are ignored.
 
-(3) precision
+	(3) precision
 	An integer that indicates the number of decimal places of precision to use, when computing the sum of potential combinations of addends.
 
-(4) verbose
+	(4) verbose
 	A boolean flag that indicates whether or not to output to the browser's console (console.log), the status of every combination or iteration of addends being tried. PLEASE NOTE that, on a large target or a large array turning this flag on (true) takes much longer to process. 
 
 
