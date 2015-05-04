@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Addend Testing Script v0.1</title>
+	<script src="addends.js"></script>
+	<script>
+
+	// Info
+	console.log('Addends v0.1 by Falconer & Loi, LLC')
+	
+	// Basic tests
+	console.log('\nBasic tests...');
+	console.log( getAddends(7,[1,2,3,4,5]) );
+	console.log( getAddends(7,[1,2,3,4,5,6]) );
+	console.log( getAddends(12,[1,2,3,4,5,6,7,8,9,10]) );
+	console.log( getAddends(12,[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24]) );
+	console.log( getAddends(112,[1,2,3,4,5,6,7,8,9,10,21,22,23,24]) );
+
+	// These will retutn null
+	console.log('\nInvalid parameter tests... ');
+	console.log( getAddends(null,[]) );
+	console.log( getAddends(null,[1]) );
+	console.log( getAddends(null,null) );
+	console.log( getAddends(7,[]) );
+
+	// Strange cases
+	console.log('\nStrange cases... ');
+	console.log( getAddends(7,[7]) );
+	console.log( getAddends(7,[0,7]) );
+	console.log( getAddends(7,[1,2,3,4,5,6,7]) );
+	console.log( getAddends(7,[-1,1,2,3,4,5,6,7]) );
+	console.log( getAddends(7,[8,9,10,11,12,13]) );
+	console.log( getAddends(63,[8,9,10,11,12,13]) );
+	console.log( getAddends(1,[-1.0,1,-2.3,3.3,+2.4,true,+2.3,'a'],2,false) );
+	console.log( getAddends(0,[-1.0,1,'b',-2.3,false,+2.4,2.3],null,false) );
+
+	// Mixing strings, arrays and objects
+	console.log('\nMixing data types...');
+	console.log( getAddends(8.2,[0.2,'a',8.0],2,false) );
+	console.log( getAddends(8.3,[0.3,'a',8.0],null,false) );
+	console.log( getAddends(8,[true,'a',8.0],null,false) );
+	console.log( getAddends(8,[true,'a',8.0,2,6,2.1,5.9,0.0,0],null,false) );
+	console.log( getAddends(8,[true,'a',8.0,2,6,2.1,5.9,0.0,0,-1E10,2E-10],null,false) );
+
+	// Float numbers
+	console.log('\nFloat numbers tests...');
+	console.log( getAddends(8.2,[8,9,10,11,12,13,0.2]) );
+	console.log( getAddends(8.2,[0.2,8],null,false) );
+	console.log( getAddends(8.2,[0.2,8.0],undefined) );
+	console.log( getAddends(8.2,[0.2,8.0]) );
+	console.log( getAddends(8.3,[0.2,8.1]) );
+	console.log( getAddends(8.0,[2.0,6.0],3) );
+
+	// Performance tests
+	//console.log( '\nPerformance tests...');
+	//console.log(getAddends(112, [0,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24]));
+
+	</script>
+</head>
+<body>
+
+	To read the output of the performed tests, 
+	open the browser's javascript console.
+
+</body>
+</html>
