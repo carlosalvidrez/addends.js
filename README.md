@@ -12,13 +12,18 @@ Function's input parameters:
 	The number (integer or float0 being sought (integer or float, cientific notation accepted).
 
 	(2) arr
-	A numeric array of numbers from which to draw potential addend combinations. Text, boolean values and objects are ignored.
+	A numeric array of numbers from which to draw potential addend combinations. Text, boolean 
+	values and objects are ignored.
 
 	(3) precision
-	An integer that indicates the number of decimal places of precision to use, when computing the sum of potential combinations of addends.
+	An integer that indicates the number of decimal places of precision to use, when computing 
+	the sum of potential combinations of addends.
 
 	(4) verbose
-	A boolean flag that indicates whether or not to output to the browser's console (console.log), the status of every combination or iteration of addends being tried. PLEASE NOTE that, on a large target or a large array turning this flag on (true) takes much longer to process. 
+	A boolean flag that indicates whether or not to output to the browser's console 
+	(console.log), the status of every combination or iteration of addends being tried. 
+	PLEASE NOTE that, on a large target or a large array turning this flag on (true) takes 
+	much longer to process. 
 
 
 Function's output: An object with the following properties:
@@ -39,7 +44,8 @@ Function's output: An object with the following properties:
 		An array with all found combinations of addendsthat sum up to the 'target' number.
 	
 	(6) iterations
-		The total number of sums explored when searching with all possible combinations of addends.
+		The total number of sums explored when searching with all possible combinations 
+		of addends.
 	
 	(7) time
 		Processing time, in milliseconds. 
